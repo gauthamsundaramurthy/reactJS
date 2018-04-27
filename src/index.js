@@ -8,5 +8,7 @@ import Props_validation from './Props_validation/Props_validation'
 import SetState from './SetState/SetState'
 import DOM_Node from './DOM_Node/DOM_Node'
 import Child_Parent from './Data_childToParent/Child_Parent'
+import Ref from './ref/ref'
+import Keys from './keys/keys'
 
-ReactDOM.render(<Child_Parent/>, document.getElementById('root'));
+ReactDOM.render(<Keys/>, document.getElementById('root'));
