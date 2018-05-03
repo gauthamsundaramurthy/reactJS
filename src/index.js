@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './componentLifeCycle/ComponentLifeCycle';
+import ComponentLifeCycle from './componentLifeCycle/ComponentLifeCycle';
 import State from './State/State';
 import Props from './Props/Props'
 import State_Props from './State_Props/State_Props'
@@ -11,5 +11,18 @@ import Child_Parent from './Data_childToParent/Child_Parent'
 import Ref from './ref/ref'
 import Keys from './keys/keys'
 import React_router from './react_router/react_router/react_router'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import App from './redux/components/app'
+import rootReducer from './redux/reducers'
 
-ReactDOM.render(<React_router/>, document.getElementById('root'));
+const store = createStore(rootReducer)
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+)
+
+//ReactDOM.render(<React_router/>, document.getElementById('root'));
