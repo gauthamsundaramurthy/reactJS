@@ -15,13 +15,12 @@ import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import App from './redux/components/app'
 import rootReducer from './redux/reducers'
+import MediaQuery from './responsive_design/mediaQuery'
 
 const store = createStore(rootReducer)
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+  <MediaQuery/>,
   document.getElementById('root')
 )
 
