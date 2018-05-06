@@ -15,7 +15,7 @@ import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import App from './redux/components/app'
 import rootReducer from './redux/reducers'
-import MediaQuery from './responsive_design/mediaQuery'
+import MediaQuery from './responsive_design/mediaQuery/mediaQuery'
 
 const store = createStore(rootReducer)
 
