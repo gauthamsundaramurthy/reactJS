@@ -16,11 +16,12 @@ import { createStore } from 'redux'
 import App from './redux/components/app'
 import rootReducer from './redux/reducers'
 import MediaQuery from './responsive_design/mediaQuery/mediaQuery'
+import Rwd1 from './responsive_design/rwd_1/rwd_1'
 
 const store = createStore(rootReducer)
 
 ReactDOM.render(
-  <MediaQuery/>,
+  <Rwd1/>,
   document.getElementById('root')
 )
 
