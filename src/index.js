@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+/*
 import ComponentLifeCycle from './componentLifeCycle/ComponentLifeCycle';
 import State from './State/State';
 import Props from './Props/Props'
@@ -20,8 +22,10 @@ import Rwd1 from './responsive_design/rwd_1/rwd_1'
 import Rwd2 from './responsive_design/rwd_2/rwd_2'
 
 const store = createStore(rootReducer)
+*/
+import Inshorts from './inshorts/without_Responsive/inshorts'
 
 ReactDOM.render(
-  <Rwd2/>,
+  <Inshorts/>,
   document.getElementById('root')
 )
