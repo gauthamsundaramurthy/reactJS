@@ -17,12 +17,11 @@ import App from './redux/components/app'
 import rootReducer from './redux/reducers'
 import MediaQuery from './responsive_design/mediaQuery/mediaQuery'
 import Rwd1 from './responsive_design/rwd_1/rwd_1'
+import Rwd2 from './responsive_design/rwd_2/rwd_2'
 
 const store = createStore(rootReducer)
 
 ReactDOM.render(
-  <Rwd1/>,
+  <Rwd2/>,
   document.getElementById('root')
 )
-
-//ReactDOM.render(<React_router/>, document.getElementById('root'));
