@@ -20,10 +20,13 @@ import rootReducer from './redux/reducers'
 import MediaQuery from './responsive_design/mediaQuery/mediaQuery'
 import Rwd1 from './responsive_design/rwd_1/rwd_1'
 import Rwd2 from './responsive_design/rwd_2/rwd_2'
-
 const store = createStore(rootReducer)
-*/
+
 import Inshorts from './inshorts/without_Responsive/inshorts'
+
+*/
+
+import Inshorts from './inshorts/responsive/inshorts'
 
 ReactDOM.render(
   <Inshorts/>,
