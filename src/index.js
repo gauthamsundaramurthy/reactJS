@@ -13,7 +13,6 @@ import Child_Parent from './Data_childToParent/Child_Parent'
 import Ref from './ref/ref'
 import Keys from './keys/keys'
 import React_router from './react_router/react_router/react_router'
-import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import App from './redux/components/app'
 import rootReducer from './redux/reducers'
@@ -23,12 +22,20 @@ import Rwd2 from './responsive_design/rwd_2/rwd_2'
 const store = createStore(rootReducer)
 
 import Inshorts from './inshorts/without_Responsive/inshorts'
+import Inshorts from './inshorts/responsive/inshorts'
 
 */
 
-import Inshorts from './inshorts/responsive/inshorts'
+import { Provider } from 'react-redux'
+import { createStore, applyMiddleware } from 'redux';
+
+import App from './redux_2/components/app';
+import reducers from './redux_2/reducers';
+
+const createStoreWithMiddleware = applyMiddleware()(createStore);
 
 ReactDOM.render(
-  <Inshorts/>,
-  document.getElementById('root')
-)
+  <Provider store={createStoreWithMiddleware(reducers)}>
+    <App />
+  </Provider>
+  , document.getElementById('root'));
