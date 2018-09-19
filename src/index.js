@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
 /*
 import ComponentLifeCycle from './componentLifeCycle/ComponentLifeCycle';
@@ -20,22 +20,14 @@ import MediaQuery from './responsive_design/mediaQuery/mediaQuery'
 import Rwd1 from './responsive_design/rwd_1/rwd_1'
 import Rwd2 from './responsive_design/rwd_2/rwd_2'
 const store = createStore(rootReducer)
-
 import Inshorts from './inshorts/without_Responsive/inshorts'
 import Inshorts from './inshorts/responsive/inshorts'
 
 */
 
-import { Provider } from 'react-redux'
-import { createStore, applyMiddleware } from 'redux';
-
-import App from './redux_2/components/app';
-import reducers from './redux_2/reducers';
-
-const createStoreWithMiddleware = applyMiddleware()(createStore);
+import {PreviewImage} from './unitTesting/PreviewImage'
+// import {Button} from './unitTesting/Button'
 
 ReactDOM.render(
-  <Provider store={createStoreWithMiddleware(reducers)}>
-    <App />
-  </Provider>
-  , document.getElementById('root'));
+  <PreviewImage />
+  , document.getElementById('root'))
