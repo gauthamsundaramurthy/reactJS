@@ -10,5 +10,5 @@ Contents
    5. Props validation
    6. Component life cycle
    7. Unit testing (Jest)
-   
+   8. Higher order components
   
