@@ -1,8 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import App from './hocDemo/app'
+import HomePage from './lazyLoading/homePage'
+import './index.css'
 
 ReactDOM.render(
-  <App />
+  <HomePage />
   , document.getElementById('root'))
