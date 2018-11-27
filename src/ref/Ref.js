@@ -1,28 +1,23 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 
 class Ref extends React.Component {
   constructor (props) {
     super(props)
-    this.state = {
-      data: ''
-    }
-    this.updateState = this.updateState.bind(this)
-    this.clearInput = this.clearInput.bind(this)
+    this.myInput = React.createRef()
+    this.formSubmit = this.formSubmit.bind(this)
   }
-  updateState (e) {
-    this.setState({data: e.target.value})
+
+  formSubmit () {
+    alert(this.myInput.current.value)
   }
-  clearInput () {
-    this.setState({data: ''})
-    ReactDOM.findDOMNode(this.refs.myInput).focus()
-  }
+
   render () {
     return (
       <div>
-        <input ref='myInput' value={this.state.data} onChange={this.updateState} />
-        <button onClick={this.clearInput}>CLEAR</button>
-        <h4>{this.state.data}</h4>
+        <form onSubmit={this.formSubmit} >
+          <input type='text' ref={this.myInput} />
+          <input type='submit' value='Submit' />
+        </form>
       </div>
     )
   }

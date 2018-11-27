@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import HomePage from './lazyLoading/homePage'
+import RefOnChildComponent from './ref/RefOnChildComponent'
 import './index.css'
 
 ReactDOM.render(
-  <HomePage />
+  <RefOnChildComponent />
   , document.getElementById('root'))
