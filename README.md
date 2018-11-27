@@ -11,4 +11,4 @@ Contents
    6. Component life cycle
    7. Unit testing (Jest)
    8. Higher order components
-  
+   9. React lazy loading 
