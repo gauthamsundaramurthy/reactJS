@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import App from './hocDemo/app'
+import PC from './pureComponent/PC'
 
 ReactDOM.render(
-  <App />
+  <PC />
   , document.getElementById('root'))
