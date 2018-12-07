@@ -12,3 +12,4 @@ Contents
    7. Unit testing (Jest)
    8. Higher order components
    9. React lazy loading 
+   10.Usuage of Pure component 
